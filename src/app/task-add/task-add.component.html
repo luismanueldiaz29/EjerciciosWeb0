@@ -1,0 +1,23 @@
+<p>task-add works!</p>
+
+<div class="form group">
+    <label >Titulo:
+        <input [(ngModel)]="task.title" placeholder="digite titulo" type="text" />
+    </label>
+</div>
+
+<div>
+    <label>Descripcion:
+        <input [(ngModel)]="task.description" placeholder="digite descripcion" type="text" />
+    </label>
+</div>
+
+<div>
+    <label >Prioritario:
+        <input type="checkbox" [(ngModel)]="task.priority">
+    </label>
+</div>
+
+<div>
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+</div>
